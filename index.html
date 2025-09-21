@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBron vs MJ Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="lebron.png" as="image">
+    <link rel="preload" href="mj.png" as="image">
+</head>
+<body>
+    <div class="container">
+        <h1>LeBron vs MJ</h1>
+        <div class="game-info">
+            <div class="player-turn">
+                <span id="current-player">LeBron's Turn</span>
+            </div>
+            <div class="score">
+                <div class="score-item">
+                    <span class="player-name">LeBron</span>
+                    <span id="lebron-score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="player-name">MJ</span>
+                    <span id="mj-score">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-board" id="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="reset-btn" class="btn">New Game</button>
+            <button id="reset-score-btn" class="btn secondary">Reset Score</button>
+        </div>
+        
+        <div id="game-message" class="game-message"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
